@@ -13,13 +13,17 @@ osmanager.py - externalized logic to manipulate local OS processes.
 properties.py - properties file
 
 Services.py functions:
-add(process) - Adds a new process to ProcessList using algorithm from setup (capacity (default), FIFO, priority)
+add(process) - Adds a new process to ProcessList using algorithm from setup (capacity (default), FIFO, priority.
+
 list(kwargs) - Returns array of records represting existing processes in a raw, text format, not ProcessList objects. 
 	arguments (optional):
 	sortBy - (pid (default), priority, createdOn) - defines sorting criteria
 	reverseOrder - True|False(default) - sort in desc order
+	
 kill(pid) - Kills process in ProcessList with provided PID
+
 kill_group(priority) - Kills all processes in ProcessList with provided priority
+
 kill_all() - Kills all processes in ProcessList 
 
 In order to allow easy testing a CMD app is created in the root folder under a name app.py
@@ -27,9 +31,13 @@ Run "python app.py" in order to use command-line like interface.
 
 Commands:
 add <pid> <priority> - adds a new process to task manager with provided PID and priority (low, medium, high)
+
 list - lists all current processes
+
 kill <pid> - kills process by its PID
+
 kill_group <priority> - kills all processes with given priority
+
 kill_all - kills all processes
 
 ### Prerequisites
@@ -42,7 +50,7 @@ In order to install module just fork it or download from the repository to your 
 
 From the folder where it is downloaded run:
 
-pip install -r requirements.txt
+> pip install -r requirements.txt
 
 In order to install any needed libraries.
 
