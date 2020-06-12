@@ -1,0 +1,3 @@
+MAX_CAPACITY = 10
+ADD_METHOD = 'priority'
+ENVIRONMENT = 'dev'
